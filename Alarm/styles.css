@@ -1,25 +1,51 @@
 button {
-    background-color: #4c98af; /* Green */
-    border: none;
+  background-color: #4c98af; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 50px;
+}
+
+div.main {
+  background-color: darkslategray;
+  padding: 10px;
+}
+
+label {
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 50px;
-  }
+}
 
-  div.main {
-    background-color: darkslategray;
-    padding: 10px;
-  }
+select, input {
+    padding: 4px;
+    width: 20%;
+}
 
-  label {
-      color: white;
-  }
+/* adding css for dark mode and light mode slider */
+.slider {
+  width: 30px;
+  opacity: 1;
+  -webkit-transition: 2s;
+  transition: opacity 2s;
+  background: green;
+}
 
-  select, input {
-      padding: 4px;
-      width: 20%;
-  }
+.slider::-webkit-slider-thumb {
+  height: 25px; 
+  cursor: pointer;
+  background: white;
+}
+
+.slider::-moz-range-thumb {
+  height: 25px;
+  cursor: pointer;
+  background: black;
+}
+
+/* dark mode classes */
+.dark-mode .main{
+  background: black;
+}

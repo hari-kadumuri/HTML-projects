@@ -5,6 +5,13 @@
             Custom Alarm
         </title>
         <script>
+            // adding dark mode class
+            var slider = document.getElementById("myRange");
+            slider.oninput = function() {
+                var element = document.body;
+                if(this.value == 1) element.classList.toggle("dark-mode");
+            }
+
             var notification;
             var count;
             function startAlarm() { 
@@ -35,6 +42,10 @@
     
     <body>
         <div class="main">
+            <div class="slidecontainer" style="float: right;">
+                <label for="myRange">Dark Mode:</label>
+                <input type="range" min="0" max="1" value="0" class="slider" id="myRange">
+            </div>
             <h2 style="font-weight: bold; color: white;">Custom Alarm</h2>
             <div style="border: white; border-style: solid; margin: 10px; padding: 10px;">
                 <div>

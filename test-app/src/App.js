@@ -8,9 +8,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Greet />
-        <Welcome /> */}
-        <Hello />
+        <Greet name="Diana" supeName="Wonder Woman">
+          <p>This is children props</p>
+        </Greet>
+        <Greet name="Clarke" supeName="Superman">
+          <button>Click me!</button>
+        </Greet>
+        <Welcome name="Diana" supeName="Wonder Woman">
+          <p>This is children props</p>
+        </Welcome>
+        <Welcome name="Clarke" supeName="Superman">
+          <button>Click me!</button>
+        </Welcome>
       </div>
     );
   }

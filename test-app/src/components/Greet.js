@@ -1,5 +1,12 @@
 import React from 'react';
 
-const Greet = () => <h1>Hello Hari!</h1>
+const Greet = (props) => {
+    return (
+        <div>
+            <h1>Hello {props.name}! You are {props.supeName}</h1>
+            {props.children}
+        </div>
+    )
+}
 
 export default Greet

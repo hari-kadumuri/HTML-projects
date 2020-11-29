@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Alarm from './alarm-app/Alarm';
+import Alarm from './components/Alarm';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,65 @@
+button {
+background-color: #4c98af; /* Green */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 20px 50px;
+}
+
+div.main {
+background-color: darkslategray;
+padding: 10px;
+height: 60%;
+border-style: solid;
+border-color: white;
+}
+
+em {
+    color: white;
+    background-color: red;
+}
+
+label em {
+    font-style: italic;
+    color: red;
+    background-color: unset;
+}
+
+label {
+    color: white;
+}
+
+select, input {
+    padding: 4px;
+    width: 20%;
+}
+
+/* adding css for dark mode and light mode slider */
+.slider {
+width: 30px;
+opacity: 1;
+-webkit-transition: 2s;
+transition: opacity 2s;
+background: green;
+}
+
+.slider::-webkit-slider-thumb {
+height: 25px; 
+cursor: pointer;
+background: white;
+}
+
+.slider::-moz-range-thumb {
+height: 25px;
+cursor: pointer;
+background: black;
+}
+
+/* dark mode classes */
+.dark-mode .main{
+background: black;
+}

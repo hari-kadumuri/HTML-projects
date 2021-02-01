@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Test HTML Project</title>
+        <script>
+            function submit() {
+                console.log("Submitted");
+                var maleradio = document.getElementById("Male");
+                var femaleradio = document.getElementById("Female");
+                var otherradio = document.getElementById("Other");
+                var message = "";
+                if(maleradio.checked == true) {
+                    message =  maleradio.value;
+                }
+                else if (femaleradio.checked == true) {
+                    message = femaleradio.value;
+                }
+                else {
+                    message = otherradio.value;
+                }
+                message += " Submitted!"
+                document.getElementById("result").innerHTML = message;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <br/>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+            <br/>
+            <input type="radio" name="gender" id="Other" value="Other">
+            <label for="Other">Other</label>
+            <br/>
+            <br/>
+            <button id="payBtn" onclick="submit()" style="margin-left: 50px;">Pay Now</button>
+        </div>
+        <br/>
+        <hr>
+        <div>
+            <p id="result"></p>
+        </div>
+    </body>
+</html>
